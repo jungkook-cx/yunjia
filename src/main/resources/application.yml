@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///yunhome?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  thymeleaf:
+    cache: false
+
+# mybatis showsql
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
